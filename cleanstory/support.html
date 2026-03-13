@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CleanStory - 고객 지원</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: #1a1a1a;
+      background: #f8f9fa;
+      line-height: 1.8;
+    }
+    .header {
+      background: #fff;
+      border-bottom: 1px solid #e9ecef;
+      padding: 20px 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 22px;
+      font-weight: 800;
+      color: #333;
+      text-decoration: none;
+    }
+    .nav-links a {
+      font-size: 14px;
+      color: #666;
+      text-decoration: none;
+      margin-left: 24px;
+      font-weight: 500;
+    }
+    .nav-links a:hover { color: #4A90D9; }
+    .content {
+      background: #fff;
+      border-radius: 16px;
+      padding: 48px 40px;
+      margin: 40px auto;
+      max-width: 800px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .content h1 {
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 24px;
+      color: #1a1a1a;
+    }
+    .content h2 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      color: #333;
+    }
+    .content p {
+      font-size: 15px;
+      color: #444;
+      margin-bottom: 12px;
+    }
+    .content a {
+      color: #4A90D9;
+      text-decoration: none;
+    }
+    .content a:hover { text-decoration: underline; }
+    .contact-card {
+      background: #f0f7ff;
+      border-radius: 12px;
+      padding: 24px;
+      margin: 24px 0;
+    }
+    .contact-card p {
+      margin-bottom: 8px;
+    }
+    .faq-item {
+      border-bottom: 1px solid #e9ecef;
+      padding: 20px 0;
+    }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-item h3 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #333;
+    }
+    .faq-item p {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 0;
+    }
+    .footer {
+      text-align: center;
+      padding: 40px 24px;
+      color: #999;
+      font-size: 14px;
+    }
+    .footer a { color: #666; text-decoration: none; }
+    @media (max-width: 600px) {
+      .content { padding: 32px 20px; margin: 20px 12px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a class="logo" href="/cleanstory/">CleanStory</a>
+      <nav class="nav-links">
+        <a href="/cleanstory/">앱 소개</a>
+        <a href="/cleanstory/privacy.html">개인정보처리방침</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="content">
+    <h1>고객 지원</h1>
+    <p>CleanStory 이용 중 문제가 발생하거나 문의 사항이 있으시면 아래 방법으로 연락해 주세요.</p>
+
+    <div class="contact-card">
+      <p><strong>이메일:</strong> <a href="mailto:story.support@gmail.com">story.support@gmail.com</a></p>
+      <p>영업일 기준 1~2일 이내에 답변드리겠습니다.</p>
+    </div>
+
+    <h2>자주 묻는 질문</h2>
+
+    <div class="faq-item">
+      <h3>Q. 로그인 방식을 변경할 수 있나요?</h3>
+      <p>현재 Google과 Apple 로그인을 지원합니다. 로그인 방식 변경은 기존 계정을 탈퇴한 후 새 방식으로 가입해 주세요.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Q. 공간에 가족을 초대하려면 어떻게 하나요?</h3>
+      <p>공간 설정에서 초대 코드를 확인하고, 가족에게 공유하세요. 초대 코드를 입력하면 가입 요청이 전송되며, 관리자가 승인하면 참여할 수 있습니다.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Q. 계정을 삭제하면 데이터는 어떻게 되나요?</h3>
+      <p>계정 탈퇴 시 개인정보(프로필, 푸시 토큰 등)는 즉시 삭제됩니다. 청소 기록의 작성자명은 "(탈퇴한 사용자)"로 익명화되어 다른 멤버의 기록에는 영향을 주지 않습니다.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Q. 청소 주기는 어떻게 변경하나요?</h3>
+      <p>작업 상세 화면에서 우측 상단 "편집"을 눌러 청소 주기를 변경할 수 있습니다. 관리자 권한이 필요합니다.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Q. 앱이 정상적으로 동작하지 않아요.</h3>
+      <p>앱을 완전히 종료한 후 다시 실행해 보세요. 문제가 계속되면 이메일로 기기 모델과 iOS 버전을 함께 보내주시면 빠르게 도움드리겠습니다.</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Support Story. <a href="/">홈으로</a></p>
+  </footer>
+</body>
+</html>
