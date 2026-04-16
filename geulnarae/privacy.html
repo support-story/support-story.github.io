@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글나래 - 개인정보처리방침</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: #2A2118;
+      background: #F7F0E3;
+      line-height: 1.8;
+    }
+    .header {
+      background: #FCF9F3;
+      border-bottom: 1px solid #E4D9C3;
+      padding: 20px 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 22px;
+      font-weight: 800;
+      color: #2A2118;
+      text-decoration: none;
+    }
+    .nav-links a {
+      font-size: 14px;
+      color: #7B6E8F;
+      text-decoration: none;
+      margin-left: 24px;
+      font-weight: 500;
+    }
+    .nav-links a:hover { color: #C45C4A; }
+    .content {
+      background: #FCF9F3;
+      border-radius: 16px;
+      padding: 48px 40px;
+      margin: 40px auto;
+      max-width: 800px;
+      box-shadow: 0 2px 8px rgba(42,33,24,0.08);
+    }
+    .content h1 {
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 8px;
+      color: #2A2118;
+    }
+    .date {
+      font-size: 14px;
+      color: #AFA69C;
+      margin-bottom: 32px;
+    }
+    .content h2 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      color: #2A2118;
+    }
+    .content p {
+      font-size: 15px;
+      color: #3A3024;
+      margin-bottom: 12px;
+    }
+    .content ul {
+      margin: 8px 0 16px 20px;
+      font-size: 15px;
+      color: #3A3024;
+    }
+    .content li {
+      margin-bottom: 6px;
+    }
+    .content strong {
+      color: #2A2118;
+    }
+    .content a {
+      color: #C45C4A;
+      text-decoration: none;
+    }
+    .content a:hover { text-decoration: underline; }
+    .footer {
+      text-align: center;
+      padding: 40px 24px;
+      color: #AFA69C;
+      font-size: 14px;
+    }
+    .footer a { color: #7B6E8F; text-decoration: none; }
+    @media (max-width: 600px) {
+      .content { padding: 32px 20px; margin: 20px 12px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a class="logo" href="/geulnarae/">글나래</a>
+      <nav class="nav-links">
+        <a href="/geulnarae/">앱 소개</a>
+        <a href="/geulnarae/support.html">지원</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="content">
+    <h1>개인정보처리방침</h1>
+    <p class="date">시행일: 2026년 4월 16일</p>
+
+    <p>글나래(이하 "앱")는 이용자의 개인정보를 소중히 여기며, 관련 법령에 따라 아래와 같이 개인정보를 처리하고 있습니다. 글나래는 회원가입 없이 익명으로 사용 가능한 편지 앱이며, 편지 내용은 단말 기기에서 암호화되어 운영자도 볼 수 없습니다.</p>
+
+    <h2>1. 수집하는 개인정보</h2>
+    <p>앱은 회원가입이나 이메일 수집 없이 동작하며, 다음 정보만 자동 생성 또는 저장됩니다.</p>
+    <ul>
+      <li><strong>익명 인증 식별자</strong>: Firebase Anonymous Auth가 기기에 부여하는 임의의 uid (개인을 특정할 수 없음)</li>
+      <li><strong>주소</strong>: 앱 설치 시 자동 생성되는 6자리 영문+숫자 조합의 고유 식별자</li>
+      <li><strong>별명</strong>: "형용사 + 동물" 형태로 자동 생성되는 닉네임 (사용자가 변경 가능)</li>
+      <li><strong>기기 플랫폼 정보</strong>: iOS/Android 구분</li>
+      <li><strong>편지 메타데이터</strong>: 발신자/수신자 주소, 도착 시간, 열람 가능 시간, 생성 시각, 상태</li>
+      <li><strong>암호화된 편지 내용</strong>: 이용자가 직접 입력한 열쇠말로 단말에서 암호화된 상태로만 저장되며, 운영자는 복호화할 수 없습니다.</li>
+    </ul>
+
+    <h2>2. 개인정보의 이용 목적</h2>
+    <ul>
+      <li>편지의 발송 및 수신 처리</li>
+      <li>수신자 주소 확인 및 별명 표시</li>
+      <li>발송 시간/열람 시간 기준 상태 관리</li>
+      <li>일일 발송 제한 관리 (남용 방지)</li>
+      <li>앱 서비스 제공 및 개선</li>
+    </ul>
+
+    <h2>3. 개인정보의 제3자 제공 및 공개 범위</h2>
+    <ul>
+      <li>편지 메타데이터(발신자/수신자 주소, 별명, 도착·열람 시간)는 해당 편지의 발신자와 수신자에게만 공개됩니다.</li>
+      <li>편지 내용은 E2E 암호화되어 서버에 평문이 저장되지 않으며, 운영자를 포함한 제3자는 열람할 수 없습니다.</li>
+      <li>이용자의 별명은 편지 발송 시 수신자가 주소로 조회하면 확인할 수 있습니다.</li>
+      <li>법령에 따른 수사기관의 정당한 요청이 있는 경우에는 서버에 저장된 암호화된 편지 및 메타데이터를 제공할 수 있습니다. 단, 열쇠말이 없으므로 편지 내용 자체는 복호화하여 제공할 수 없습니다.</li>
+      <li>그 외 제3자에게 개인정보를 제공하지 않습니다.</li>
+    </ul>
+
+    <h2>4. 광고</h2>
+    <p>앱은 Google AdMob의 보상형 동영상 광고를 제공합니다. 이용자가 일일 발송 제한을 초과한 경우 자발적으로 광고를 시청하여 추가 발송권을 얻을 수 있습니다. AdMob은 광고 제공을 위해 기기 식별자 등의 정보를 수집할 수 있으며, 이는 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a>에 따릅니다.</p>
+
+    <h2>5. 개인정보의 보관 및 파기</h2>
+    <ul>
+      <li><strong>미열람 편지</strong>: 서버에 최대 90일간 암호화된 상태로 보관 후 자동 삭제됩니다.</li>
+      <li><strong>열람된 편지</strong>: 수신자가 편지를 여는 즉시 서버에서 삭제되며, 복호화된 내용은 수신자의 기기에만 저장됩니다.</li>
+      <li><strong>기기에 저장된 편지</strong>: 열람 후 30일이 지나면 자동 삭제됩니다.</li>
+      <li><strong>보낸 편지 내역</strong>: 발신자의 기기에 메타데이터만 저장되며, 도착 후 30일이 지나면 자동 삭제됩니다.</li>
+      <li><strong>임시저장</strong>: 사용자가 직접 삭제하기 전까지 기기에 보관됩니다 (최대 10개, 열쇠말은 저장하지 않음).</li>
+      <li><strong>사용자 정보</strong>: 앱 삭제 시 기기의 주소/별명 연결이 끊기며, 이후 해당 주소로 로그인할 수 없습니다.</li>
+    </ul>
+
+    <h2>6. 이용자의 권리</h2>
+    <ul>
+      <li><strong>별명 변경</strong>: 앱 설정에서 언제든지 별명을 변경할 수 있습니다.</li>
+      <li><strong>편지 삭제</strong>: 받은 편지는 목록에서 즉시 삭제할 수 있으며, 보낸 편지 내역도 좌측 슬라이드로 삭제할 수 있습니다.</li>
+      <li><strong>주소 말소</strong>: 앱을 삭제하면 해당 기기의 주소가 더 이상 사용되지 않습니다. 단, 기기 변경 또는 재설치 시 새로운 주소가 발급되므로 기존 주소는 복구되지 않습니다.</li>
+    </ul>
+
+    <h2>7. 개인정보 보호 조치</h2>
+    <ul>
+      <li><strong>E2E 암호화</strong>: 편지 내용은 AES-256-GCM + PBKDF2(반복 10만회)로 이용자 기기에서 암호화된 후 전송되며, 열쇠말은 서버에 전송되지 않습니다.</li>
+      <li><strong>Firestore 보안 규칙</strong>: 발신자/수신자 외에는 편지를 조회할 수 없으며, 사용자 정보는 본인만 직접 조회할 수 있습니다.</li>
+      <li><strong>발송 제한</strong>: 일일 최대 5건까지만 발송할 수 있어 스팸 발송을 방지합니다.</li>
+      <li><strong>전송 구간 암호화</strong>: 모든 네트워크 통신은 TLS로 보호됩니다.</li>
+    </ul>
+
+    <h2>8. 아동의 개인정보</h2>
+    <p>글나래는 만 14세 미만 아동의 개인정보를 의도적으로 수집하지 않습니다. 만 14세 미만인 경우 보호자의 동의 없이 앱을 이용하지 마시기 바랍니다.</p>
+
+    <h2>9. 문의</h2>
+    <p>개인정보 관련 문의는 아래로 연락해 주세요.</p>
+    <ul>
+      <li>이메일: <a href="mailto:story.support@gmail.com">story.support@gmail.com</a></li>
+    </ul>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 <a href="mailto:story.support@gmail.com">story.support@gmail.com</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글나래 - 마음을 담은 편지</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: #2A2118;
+      background: #F7F0E3;
+      line-height: 1.6;
+    }
+    .header {
+      background: #FCF9F3;
+      border-bottom: 1px solid #E4D9C3;
+      padding: 20px 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 22px;
+      font-weight: 800;
+      color: #2A2118;
+      text-decoration: none;
+    }
+    .nav-links a {
+      font-size: 14px;
+      color: #7B6E8F;
+      text-decoration: none;
+      margin-left: 24px;
+      font-weight: 500;
+    }
+    .nav-links a:hover { color: #C45C4A; }
+    .hero {
+      text-align: center;
+      padding: 80px 24px;
+      background: linear-gradient(135deg, #FCF9F3 0%, #F7F0E3 100%);
+    }
+    .hero-icon {
+      width: 100px;
+      height: 100px;
+      border-radius: 22px;
+      object-fit: cover;
+      margin: 0 auto 24px;
+    }
+    .hero h1 {
+      font-size: 36px;
+      font-weight: 800;
+      margin-bottom: 8px;
+      color: #2A2118;
+    }
+    .hero .tagline {
+      font-size: 18px;
+      color: #7B6E8F;
+      margin-bottom: 32px;
+    }
+    .app-store-badge {
+      display: inline-block;
+      height: 50px;
+      border-radius: 10px;
+      background: #2A2118;
+      color: #FCF9F3;
+      padding: 8px 20px;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+      line-height: 34px;
+    }
+    .features {
+      padding: 60px 0;
+    }
+    .features h2 {
+      font-size: 24px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 40px;
+      color: #2A2118;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+    }
+    .feature-card {
+      background: #FCF9F3;
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 2px 8px rgba(42,33,24,0.08);
+      text-align: center;
+    }
+    .feature-card .icon {
+      font-size: 36px;
+      margin-bottom: 16px;
+    }
+    .feature-card h3 {
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .feature-card p {
+      font-size: 14px;
+      color: #7B6E8F;
+    }
+    .links-section {
+      padding: 40px 0 60px;
+    }
+    .links-section .container {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+    .links-section a {
+      font-size: 15px;
+      color: #C45C4A;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .links-section a:hover { text-decoration: underline; }
+    .footer {
+      text-align: center;
+      padding: 40px 24px;
+      color: #AFA69C;
+      font-size: 14px;
+      border-top: 1px solid #E4D9C3;
+    }
+    .footer a { color: #7B6E8F; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a class="logo" href="/">Support Story</a>
+      <nav class="nav-links">
+        <a href="/geulnarae/privacy.html">개인정보처리방침</a>
+        <a href="/geulnarae/support.html">지원</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <img class="hero-icon" src="/images/geulnarae-icon.png" alt="글나래">
+    <h1>글나래</h1>
+    <p class="tagline">마음을 담은 편지에 날개를 달아 보냅니다</p>
+    <a class="app-store-badge" href="#">App Store에서 다운로드</a>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <h2>주요 기능</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="icon">✉️</div>
+          <h3>시간차 배달</h3>
+          <p>도착 시간과 열람 시간을 직접 설정해 편지를 보냅니다</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🔒</div>
+          <h3>E2E 암호화</h3>
+          <p>열쇠말로 암호화되어 운영자도 내용을 볼 수 없습니다</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🕊️</div>
+          <h3>회원가입 불필요</h3>
+          <p>6자리 주소만으로 편지를 주고받을 수 있습니다</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🌱</div>
+          <h3>조용한 소통</h3>
+          <p>푸시 알림 없이, 우편함을 열어보는 설렘을 유지합니다</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="links-section">
+    <div class="container">
+      <a href="/geulnarae/privacy.html">개인정보처리방침</a>
+      <a href="/geulnarae/support.html">고객 지원</a>
+      <a href="mailto:story.support@gmail.com">문의하기</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2026 <a href="mailto:story.support@gmail.com">story.support@gmail.com</a></p>
+  </footer>
+</body>
+</html>

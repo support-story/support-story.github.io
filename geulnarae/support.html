@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글나래 - 고객 지원</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: #2A2118;
+      background: #F7F0E3;
+      line-height: 1.8;
+    }
+    .header {
+      background: #FCF9F3;
+      border-bottom: 1px solid #E4D9C3;
+      padding: 20px 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 22px;
+      font-weight: 800;
+      color: #2A2118;
+      text-decoration: none;
+    }
+    .nav-links a {
+      font-size: 14px;
+      color: #7B6E8F;
+      text-decoration: none;
+      margin-left: 24px;
+      font-weight: 500;
+    }
+    .nav-links a:hover { color: #C45C4A; }
+    .content {
+      background: #FCF9F3;
+      border-radius: 16px;
+      padding: 48px 40px;
+      margin: 40px auto;
+      max-width: 800px;
+      box-shadow: 0 2px 8px rgba(42,33,24,0.08);
+    }
+    .content h1 {
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 24px;
+      color: #2A2118;
+    }
+    .content h2 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      color: #2A2118;
+    }
+    .content p {
+      font-size: 15px;
+      color: #3A3024;
+      margin-bottom: 12px;
+    }
+    .content a {
+      color: #C45C4A;
+      text-decoration: none;
+    }
+    .content a:hover { text-decoration: underline; }
+    .contact-card {
+      background: #F7F0E3;
+      border-radius: 12px;
+      padding: 24px;
+      margin: 24px 0;
+    }
+    .contact-card p {
+      margin-bottom: 8px;
+    }
+    .faq-item {
+      border-bottom: 1px solid #E4D9C3;
+      padding: 20px 0;
+    }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-item h3 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #2A2118;
+    }
+    .faq-item p {
+      font-size: 14px;
+      color: #7B6E8F;
+      margin-bottom: 0;
+    }
+    .footer {
+      text-align: center;
+      padding: 40px 24px;
+      color: #AFA69C;
+      font-size: 14px;
+    }
+    .footer a { color: #7B6E8F; text-decoration: none; }
+    @media (max-width: 600px) {
+      .content { padding: 32px 20px; margin: 20px 12px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a class="logo" href="/geulnarae/">글나래</a>
+      <nav class="nav-links">
+        <a href="/geulnarae/">앱 소개</a>
+        <a href="/geulnarae/privacy.html">개인정보처리방침</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="content">
+    <h1>고객 지원</h1>
+    <p>글나래 이용 중 문제가 발생하거나 문의 사항이 있으시면 아래 방법으로 연락해 주세요.</p>
+
+    <div class="contact-card">
+      <p><strong>이메일:</strong> <a href="mailto:story.support@gmail.com">story.support@gmail.com</a></p>
+      <p>영업일 기준 1~2일 이내에 답변드리겠습니다.</p>
+    </div>
+
+    <h2>자주 묻는 질문</h2>
+
+    <div class="faq-item">
+      <h3>Q. 회원가입은 어떻게 하나요?</h3>
+      <p>글나래는 별도의 회원가입 절차가 없습니다. 앱을 설치하면 자동으로 6자리 주소가 발급되며, 이 주소를 상대에게 알려주면 편지를 주고받을 수 있습니다.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Q. 편지를 보냈는데 취소하고 싶어요.</h3>
+      <p>우체통에 넣은 편지처럼, 한 번 보낸 편지는 취소할 수 없습니다. 글나래의 컨셉은 한 마디 한 문장을 깊이 고심해 작성한 뒤 보내는 것이므로, 발송 전에 충분히 검토해 주세요.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Q. 보낸 편지를 다시 읽어볼 수 있나요?</h3>
+      <p>도착 시간이 지난 편지는 발신자도 다시 읽을 수 없습니다. 보낸 편지 내역에는 수신자, 도착 시간 등 메타데이터만 남습니다.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Q. 열쇠말을 잊어버렸어요.</h3>
+      <p>편지는 발신자가 설정한 열쇠말로 암호화되며, 열쇠말은 운영자의 서버에도 저장되지 않습니다. 열쇠말을 모르면 운영자도 편지를 열어볼 수 없으므로, 열쇠말 힌트를 활용하거나 발신자에게 직접 확인해 주세요.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Q. 편지 도착 알림이 오지 않아요.</h3>
+      <p>글나래는 의도적으로 푸시 알림을 사용하지 않습니다. 우편함을 직접 열어보는 설렘을 유지하기 위한 컨셉이며, 사용자가 직접 앱에 들어와서 편지를 확인해야 합니다.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Q. 하루에 몇 통까지 보낼 수 있나요?</h3>
+      <p>하루에 최대 5통까지 발송할 수 있으며, 매일 자정에 초기화됩니다. 5통을 모두 사용한 경우 광고를 시청하여 1통을 추가로 보낼 수 있습니다.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Q. 기기를 변경하면 주소를 그대로 쓸 수 있나요?</h3>
+      <p>주소는 기기와 연결되어 있어 기기 변경 또는 앱 재설치 시 새로운 주소가 발급됩니다. 보낸 편지 내역과 열람한 편지도 기기에만 저장되므로, 기기 초기화 시 사라집니다.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Q. 열람한 편지는 언제까지 볼 수 있나요?</h3>
+      <p>열람 시점으로부터 30일 후 기기에서 자동으로 삭제됩니다. 오래 보관하고 싶다면 직접 스크린샷을 찍어 저장해 주세요.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Q. 별명을 바꿀 수 있나요?</h3>
+      <p>네, 앱 설정에서 언제든지 별명을 변경할 수 있습니다. 앱 설치 시 "형용사 + 동물" 형태로 자동 생성되는 별명이 기본값입니다.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Q. 악성 편지나 스팸을 받았어요.</h3>
+      <p>불쾌한 편지를 받으셨다면 이메일로 해당 편지의 발신자 주소와 도착 시간을 알려주세요. 신속히 확인 후 조치하겠습니다. 단, 편지 내용 자체는 E2E 암호화되어 운영자도 볼 수 없으므로 가급적 스크린샷도 함께 첨부 부탁드립니다.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Q. 앱이 정상적으로 동작하지 않아요.</h3>
+      <p>앱을 완전히 종료한 후 다시 실행해 보세요. 문제가 계속되면 이메일로 기기 모델과 OS 버전을 함께 보내주시면 빠르게 도움드리겠습니다.</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 <a href="mailto:story.support@gmail.com">story.support@gmail.com</a></p>
+  </footer>
+</body>
+</html>
